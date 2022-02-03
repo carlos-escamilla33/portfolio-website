@@ -1,4 +1,3 @@
-import './App.css';
 import { Navigation, About, Contact, Projects, Skills } from "./components";
 
 function App() {
