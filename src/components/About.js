@@ -29,7 +29,7 @@ const About = () => {
                     </div>
                     <div className="mt-4 lg:max-w-lg lg:w-full">
                         <img
-                            className="object-cover object-center rounded"
+                            className="object-cover object-center rounded-full"
                             alt="carlos escamilla"
                             src="./linkedin.jpeg"
                         />
