@@ -10,18 +10,21 @@ export const projects = [
         title: "FitnessTracker",
         subtitle: "React, Material Ui, Express.js, Node.js, PostgreSQL",
         description: "Full stack fitness app that implements an API using PostgreSQL as a database management system to store user workouts and info",
+        image: "./fitnestracker.png",
         link: "https://fitnesstrackerfrontend.netlify.app/"
     },
     {
         title: "StrangerThings",
         subtitle: "React, HTML, CSS, Bootstrap, StrangerThingsApi",
         description: "App using CRUD method to create a CraigsList Lite website",
+        image: "./strangerthings.png",
         link: "https://unruffled-kowalevski-aec693.netlify.app/users/login"
     },
     {
         title: "TicTacToe",
         subtitle: "Javascript, HTML, CSS, Bootstrap",
-        description: "Game app in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares",
+        description: "Two player TicTacToe game built using vanilla javascipt",
+        image: "./tictactoe.png",
         link: "https://eloquent-banach-7e7d27.netlify.app/"
     }
 ];
