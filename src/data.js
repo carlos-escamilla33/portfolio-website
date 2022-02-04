@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: "Master Mind",
-        subtitle: "React.js, MaterialUi, RandomIntegersApi",
+        subtitle: "React, MaterialUi, RandomIntegersApi",
         description: "Responsive app using gaming logic to create a version of the popular 70s guessing game, MasterMind",
         image: "./mastermind.png",
         link: "https://mastermindproject.netlify.app/"
@@ -15,7 +15,7 @@ export const projects = [
     },
     {
         title: "StrangerThings",
-        subtitle: "React, HTML, CSS, Bootstrap, StrangerThingsApi",
+        subtitle: "React, Bootstrap, StrangerThingsApi",
         description: "App using CRUD method to create a CraigsList Lite website",
         image: "./strangerthings.png",
         link: "https://unruffled-kowalevski-aec693.netlify.app/users/login"
@@ -28,3 +28,22 @@ export const projects = [
         link: "https://eloquent-banach-7e7d27.netlify.app/"
     }
 ];
+
+export const skills = [
+    "React.js",
+    "Node.js",
+    "Javscript(ES6)",
+    "Express.js",
+    "SQL",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "Material Ui",
+    "Tailwind CSS",
+    "Python",
+    "Django",
+    "EJS",
+    "PugJS",
+    "Pandas",
+    "Jupyter Notebook"
+]
