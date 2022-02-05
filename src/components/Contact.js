@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { ChatIcon, CheckCircleIcon } from "@heroicons/react/solid";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -75,6 +76,7 @@ const Contact = () => {
         emailjs.sendForm(`${SERVICE_ID}`, `${TEMPLATE_ID}`, event.target, `${USER_ID}`)
             .then((result) => {
                 if (result.text === "OK") {
+                    setFormIsSent(true);
                 }
                 console.log(result.text);
             }, (error) => {
@@ -96,21 +98,36 @@ const Contact = () => {
         formIsValid = true;
     }
 
+    useEffect(() => {
+        if (formIsSent) {
+            const timeout = setTimeout(() => setFormIsSent(false), 1000);
+            return () => {
+                clearTimeout(timeout);
+            }
+        }
+    }, [formIsSent])
+
     return (
         <section id="contact" className="relative">
             <form
                 name="contact"
                 onSubmit={sendEmail}
                 className="lg:w-1/3 md:w-1/2 flex flex-col md:mx-auto w-full md:py-8 mt-8 md:mt-0">
-                {formIsSent && (
-                    <p className="text-md text-green-400 text-center transition delay-150 duration-300 ease-in-out">Message sent!</p>
-                )}
-                <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font text-center">
-                    Connect With Me
-                </h2>
-                <p className="leading-relaxed mb-5 text-center">
-                    Connect with me to talk tech or learn more about me.
-                </p>
+                <div className="text-center">
+                    <ChatIcon className="w-10 inline-block mb-4" />
+                    <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font text-center">
+                        Connect With Me
+                    </h2>
+                    <p className="leading-relaxed mb-5 text-center">
+                        Connect with me to talk tech or learn more about me.
+                    </p>
+                    {formIsSent && (
+                        <div className="animate-ping opacity-70">
+                            <p className="text-md text-green-400">Message sent!</p>
+                            <span><CheckCircleIcon className="w-8 inline-block text-green-400" /></span>
+                        </div>
+                    )}
+                </div>
                 <div className="relative mb-4">
                     <label htmlFor="subject" className="leading-7 text-sm text-gray-400">
                         Subject
