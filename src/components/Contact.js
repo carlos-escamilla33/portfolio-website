@@ -108,7 +108,7 @@ const Contact = () => {
     }, [formIsSent])
 
     return (
-        <section id="contact" className="relative">
+        <section id="contact" className="relative rounded-t-full bg-gray-900">
             <form
                 name="contact"
                 onSubmit={sendEmail}

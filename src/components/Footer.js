@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
     return (
         <footer className="text-center bg-gray-800 text-white mt-5">
-            <div className="container px-6 pt-6">
-                <div className="flex justify-center space-x-10 mb-6">
+            <div className="flex flex-col w-full p-3">
+                <div className="flex justify-center mb-6">
                     <a href="https://twitter.com/CeAllDay3" type="button" className="rounded-full border-2 border-white text-white leading-normal w-10 h-10 m-1">
                         <svg aria-hidden="true"
                             focusable="false"
