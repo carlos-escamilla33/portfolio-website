@@ -1,12 +1,14 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-    const form = useRef();
     const [subject, setSubject] = useState("");
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+    const USER_ID = process.env.REACT_APP_USER_ID;
 
     const handleSubjectInput = (event) => {
         setSubject(event.target.value);
@@ -22,15 +24,19 @@ const Contact = () => {
         setMessage(event.target.value);
     }
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const sendEmail = (event) => {
+        event.preventDefault();
 
-        emailjs.sendForm('gmail', 'template_72skgdf', form.current, 'user_05JsMmOYFs24kBc2qTdXK')
+        emailjs.sendForm(`${SERVICE_ID}`, `${TEMPLATE_ID}`, event.target, `${USER_ID}`)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
+        setSubject("");
+        setName("");
+        setEmail("");
+        setMessage("");
     };
 
     return (
@@ -56,6 +62,7 @@ const Contact = () => {
                         name="subject"
                         className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         onChange={handleSubjectInput}
+                        value={subject}
                     />
                 </div>
                 <div className="relative mb-4">
@@ -68,6 +75,7 @@ const Contact = () => {
                         name="name"
                         className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         onChange={handleNameInput}
+                        value={name}
                     />
                 </div>
                 <div className="relative mb-4">
@@ -80,6 +88,7 @@ const Contact = () => {
                         name="email"
                         className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         onChange={handlEmailInput}
+                        value={email}
                     />
                 </div>
                 <div className="relative mb-4">
@@ -93,6 +102,7 @@ const Contact = () => {
                         name="message"
                         className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                         onChange={handleMessageInput}
+                        value={message}
                     />
                 </div>
                 <button
