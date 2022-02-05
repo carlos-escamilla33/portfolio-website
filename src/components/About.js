@@ -26,7 +26,7 @@ const About = () => {
                         </a>
                     </div>
                 </div>
-                <div className="md:w-1/2 w-4/6">
+                <div className="md:w-2/5 w-1/2">
                     <img
                         className="object-cover object-center rounded-full"
                         alt="carlos escamilla"
