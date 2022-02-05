@@ -5,7 +5,7 @@ const Navigation = () => {
     return (
         <header className="bg-gray-800 md:sticky top-0 z-10">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <LightBulbIcon className="w-5 h-5 hover:animate-spin"/>
+                <LightBulbIcon className="w-5 h-5"/>
                 <div className="title-font font-medium text-white mb-4 md:mb-0">
                     <a href="#about" className="ml-3 text-xl">
                         Carlos Escamilla
@@ -17,6 +17,9 @@ const Navigation = () => {
                     </a>
                     <a href="#skills" className="mr-5 hover:text-white">
                         Skills
+                    </a>
+                    <a href="#timeline" className="mr-5 hover:text-white">
+                        My Journey
                     </a>
                 </nav>
                 <a

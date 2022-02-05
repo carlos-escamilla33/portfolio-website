@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       borderRadius: {
         'full': '370px',
-      }
+      },
+      
     }
   },
   plugins: [],
