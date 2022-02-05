@@ -26,7 +26,7 @@ const Contact = () => {
 
     const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
     const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-    const USER_ID = process.env.REACT_APP_USER_ID;
+    // const USER_ID = process.env.REACT_APP_USER_ID;
 
     const handleSubjectInput = (event) => {
         setSubject(event.target.value);
@@ -73,7 +73,7 @@ const Contact = () => {
             return
         }
 
-        emailjs.sendForm(`${SERVICE_ID}`, `${TEMPLATE_ID}`, event.target, `${USER_ID}`)
+        emailjs.sendForm(`${SERVICE_ID}`, `${TEMPLATE_ID}`, event.target, "user_05JsMmOYFs24kBc2qTdXK")
             .then((result) => {
                 if (result.text === "OK") {
                     setFormIsSent(true);
