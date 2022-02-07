@@ -18,7 +18,7 @@ export const projects = [
         subtitle: "React, Bootstrap, StrangerThingsApi",
         description: "App using CRUD method to create a CraigsList Lite website",
         image: "./strangerthings.png",
-        link: "https://unruffled-kowalevski-aec693.netlify.app/users/login"
+        link: "https://strangerthingswebsite.netlify.app/users/login"
     },
     {
         title: "TicTacToe",
