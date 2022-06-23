@@ -10,8 +10,8 @@ const About = () => {
                         <br className="hidden lg:inline-block" /> I'm a fullstack developer.
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                        I am passionate about programming and learning about data structures/algorithms.
-                        Learning and improving are what I set out to do everyday. My goal is to be the best programmer I can be.
+                        Hi and welcome! I'm a computer science student at Cal State East Bay. I love to learn about 
+                        new technologies and building interesting projects.
                     </p>
                     <div className="flex justify-center">
                         <a
