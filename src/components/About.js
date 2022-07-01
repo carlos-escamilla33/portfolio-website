@@ -13,7 +13,7 @@ const About = () => {
                         I completed a coding bootcamp at FullStack Academy.
                     </p>
                     <p className="mb-8 leading-relaxed">
-                        I love learning new technologies and collaborating with others. I'm currently looking to break into tech and begin learning to solve real world tech problems.
+                        I love learning new technologies and collaborating with others. I'm currently looking to break into tech and eager to solve real world tech problems.
                     </p>
                     <p className="mb-8 leading-relaxed underline">
                         My dream is be software engineer.
