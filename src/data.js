@@ -32,20 +32,18 @@ export const projects = [
 export const skills = [
     "React.js",
     "Node.js",
-    "Javscript(ES6)",
+    "Javscript",
     "Express.js",
-    "SQL",
     "HTML",
     "CSS",
     "Bootstrap",
     "Material Ui",
     "Tailwind CSS",
+    "SQL",
     "Python",
     "Django",
-    "EJS",
-    "PugJS",
-    "Pandas",
-    "Jupyter Notebook"
+    "C++",
+    "Jupyter Notebook",
 ]
 
 export const achievements = [
@@ -73,5 +71,15 @@ export const achievements = [
         date: "November 2021",
         subtitle: "Graduated from FullStack Academy",
         description: "I learned about Javascript technologies during my time at FullStack Academy. I built multiple fullstack applications and learned about coding best practices along with data structures and algorithms. I gained so many great relationships along the way that I will always value."
+    },
+    {
+        date: "June 2022",
+        subtitle: "Going back to school for a CS degree",
+        description: "I decided to go back to school and earn a degree in computer science. Maybe it's the long road to achieving my dream of becoming a software engineer, but this is a challenge I am up for!"
+    },
+    {
+        date: "August 2022",
+        subtitle: "Computer Science at Cal State East Bay",
+        description: "I start in the Fall. I'll update my thoughts here shortly..."
     }
 ]
