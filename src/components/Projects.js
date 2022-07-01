@@ -11,8 +11,7 @@ const Projects = () => {
                     <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white"
                     >Apps I've Built</h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                        I'm a fullstack developer that has a keen eye for detail. I love to bring ideas
-                        to life by expressing myself through code. Every project I've built has taught me something new.
+                       I've always learned the most when I was building projects. I've put countless hours of hardwork into each project.
                     </p>
                 </div>
                 <div className="flex flex-wrap -m-4">

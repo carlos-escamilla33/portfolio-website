@@ -9,9 +9,14 @@ const About = () => {
                         About Me
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                        I'm currently a computer science major at Cal State East Bay learning C++ and Python. I decided to pursue a degree in computer science shortly after
-                        I completed a coding bootcamp at FullStack Academy. I learned Javascript and Javascript technologies like React, Node, Express, as well
-                        as PSQL.
+                        I'm currently a computer science major at Cal State East Bay. I decided to pursue a degree in computer science shortly after
+                        I completed a coding bootcamp at FullStack Academy.
+                    </p>
+                    <p className="mb-8 leading-relaxed">
+                        I love learning new technologies and collaborating with others. I'm currently looking to break into tech and begin learning to solve real world tech problems.
+                    </p>
+                    <p className="mb-8 leading-relaxed underline">
+                        My dream is be software engineer.
                     </p>
                     <div className="flex justify-center">
                         <a
